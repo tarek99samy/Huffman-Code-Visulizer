@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huffman Visualizer</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        transition: 0.3s all ease-in-out;
+      }
+      #cy {
+        height: 100vh;
+      }
+      .userInput {
+        text-align: center;
+        width: 100%;
+      }
+      #input {
+        border: 1px solid #6d9ecb;
+        outline: none;
+        margin: auto;
+        padding: 4px;
+        border-radius: 5px;
+        resize: none;
+        width: 70%;
+        display: block;
+      }
+      #submit {
+        border: 1px solid #6d9ecb;
+        background: white;
+        border-radius: 5px 10px;
+        margin: 10px auto;
+        text-align: center;
+        cursor: pointer;
+        padding: 10px;
+      }
+
+      #icon {
+        text-align: center;
+      }
+      .fa {
+        color: #6d9ecb;
+        cursor: pointer;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="slider">
+      <div class="userInput">
+        <textarea name="" id="input"></textarea>
+        <button id="submit">get huffman</button>
+      </div>
+    </div>
+    <div id="icon"><i class="fa fa-2x fa-angle-double-down"></i></div>
+    <div id="cy"></div>
+    <script src="cytoscape.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="slide.js"></script>
+  </body>
+</html>
