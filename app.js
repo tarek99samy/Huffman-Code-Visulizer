@@ -49,8 +49,8 @@ function constructPriorityQueue(nodes) {
 }
 
 function getTop(queue){
-    let min = 999999;
-    let index = -1;
+    let min = 1000000;
+    let index = 0;
     for(let i=0;i<queue.length;i++){
         if( queue[i].frequency < min ){
             min = queue[i].frequency;
@@ -244,7 +244,7 @@ function cytoVisualize(nodes,edges){
               style: {
                 'background-color': '#78AACB',
                 'label': 'data(symbol)',
-                'font-size':'20px',
+                'font-size':'25px',
                 'text-halign':'center',
                 'text-valign':'center',
                 'color':'ghostwhite'
@@ -272,12 +272,12 @@ function cytoVisualize(nodes,edges){
         layout: {
           name: 'breadthfirst',
           directed: true,
-          padding: 10,
+          padding: 20,
           fit:true,
           spacingFactor:1.5,
           avoidOverlap: true,
-          //sort:undefined,
-          //grid:true
+          sort:undefined,
+          grid:false
         }
       }); // cy init
 }
